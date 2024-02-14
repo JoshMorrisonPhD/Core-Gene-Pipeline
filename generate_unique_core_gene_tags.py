@@ -10,14 +10,14 @@ def extract_old_locus_tag_for_species(line):
     old_tag_match = re.search(r"old_locus_tag=([^;\n:]+)", line)
     return old_tag_match.group(1) if old_tag_match else None
 
-species_folder_names = ["Agalactiae", "Equi", "Pneumo", "Suis", "Uberis"] # Add Iniae later, TODO: process "All" later
+species_folder_names = ["Agalactiae", "All", "Equi", "Pneumo", "Suis", "Uberis"] # Add Iniae later
 #species_folder_names = ["Equi"] # Add Iniae later, TODO: process "All" later
 species_to_reference_strain_id = { "Agalactiae": "Agal_01173",
                     "Equi": "Equi_4047", 
                     "Pneumo": "Pneumo_TIGR4", 
                     "Suis": "Suis_P17", 
-                    "Uberis": "Uberis_0140J"
-                    #"All": "Uberis_0140"
+                    "Uberis": "Uberis_0140J",
+                    "All": "Uberis_0140J"
                     }
                     #"Iniae: "STUFF" }
 
