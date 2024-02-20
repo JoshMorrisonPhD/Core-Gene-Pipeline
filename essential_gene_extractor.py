@@ -1,32 +1,47 @@
 import pandas as pd
 import argparse
+import os
 
-def process_spreadsheet(input_file, output_file):
+def filter_locus_tags(input_file, output_dir):
     # Load the spreadsheet
-    data = pd.read_excel(input_file)
+    df = pd.read_excel(input_file)
 
-    # Extract Locus_tag values where test_num_insertions_mapped_per_feat is 0
-    locus_tags_with_zero = data[data['test_num_insertions_mapped_per_feat'] == 0]['locus_tag']
+    # Filter for locus tags with 0 test_num_insertions_mapped_per_feat and type CDS
+    cds_essential_locus_tags = df[(df['test_num_insertions_mapped_per_feat'] == 0) & (df['type'] == 'CDS')]['locus_tag']
 
-    # Convert the series to a list and then to a line-separated string
-    locus_tags_with_zero_str = "\n".join(locus_tags_with_zero.tolist())
+    # Filter for locus tags with 0 test_num_insertions_mapped_per_feat but type is not CDS
+    non_cds_essential_locus_tags = df[(df['test_num_insertions_mapped_per_feat'] == 0) & (df['type'] != 'CDS')]['locus_tag']
 
-    # Save the complete list of Locus_tag values to a text file
-    with open(output_file, 'w') as file:
-        file.write(locus_tags_with_zero_str)
-    print(f"Output saved to {output_file}")
+    # Ensure the output directory exists
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # Save the lists to separate .txt files
+    cds_file_path = os.path.join(output_dir, 'cds_essential_locus_tags.txt')
+    non_cds_file_path = os.path.join(output_dir, 'non_cds_essential_locus_tags.txt')
+
+    # Write CDS essential locus tags to file and print count
+    with open(cds_file_path, 'w') as file:
+        file.write("\n".join(cds_essential_locus_tags))
+    cds_count = len(cds_essential_locus_tags)
+
+    # Write non-CDS essential locus tags to file and print count
+    with open(non_cds_file_path, 'w') as file:
+        file.write("\n".join(non_cds_essential_locus_tags))
+    non_cds_count = len(non_cds_essential_locus_tags)
+
+    # Print files saved, counts, and total results
+    print(f"Files saved:\n{cds_file_path} with {cds_count} results\n{non_cds_file_path} with {non_cds_count} results")
+
+    # Calculate and print the total unique results found
+    total_unique_results = len(set(cds_essential_locus_tags).union(set(non_cds_essential_locus_tags)))
+    print(f"Total unique results found: {total_unique_results}")
 
 if __name__ == "__main__":
-    # Initialize the argument parser
-    parser = argparse.ArgumentParser(description="Extract Locus_tag values with 0 insertions from a spreadsheet.")
+    parser = argparse.ArgumentParser(description="Filter locus tags based on criteria.")
+    parser.add_argument("-i", "--input", required=True, help="Input Excel file path.")
+    parser.add_argument("-o", "--output", required=True, help="Output directory for the text files.")
     
-    # Add arguments for input file path and output file name
-    parser.add_argument("input_file", help="Path to the input Excel file")
-    parser.add_argument("output_file", help="Path for the output text file")
-
-    # Parse the command line arguments
     args = parser.parse_args()
-
-    # Process the spreadsheet with the provided arguments
-    process_spreadsheet(args.input_file, args.output_file)
-
+    
+    filter_locus_tags(args.input, args.output)
