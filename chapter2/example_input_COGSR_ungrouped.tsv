@@ -1,0 +1,82 @@
+GENECAT	LETTER	COUNT	DESCRIPTION	New_Category	NEWCAT_COUNT
+Acc	J	11	"Translation, ribosomal structure and biogenesis"	"DNA/RNA Storage, Translation, and Transcription"	113
+Acc	A	0	RNA processing and modification	"DNA/RNA Storage, Translation, and Transcription"	
+Acc	K	55	Transcription	"DNA/RNA Storage, Translation, and Transcription"	
+Acc	L	47	"Replication, recombination and repair"	"DNA/RNA Storage, Translation, and Transcription"	
+Acc	B	0	Chromatin structure and dynamics	"DNA/RNA Storage, Translation, and Transcription"	
+Acc	D	14	"Cell cycle control, cell division, chromosome partitioning"	Cellular Signaling	130
+Acc	Y	0	Nuclear structure	"DNA/RNA Storage, Translation, and Transcription"	
+Acc	V	38	Defense mechanisms	Cellular Signaling	
+Acc	T	15	Signal transduction mechanisms	Cellular Signaling	
+Acc	M	48	Cell wall/membrane/envelope biogenesis	Cellular Signaling	
+Acc	N	1	Cell motility	Cellular Signaling	
+Acc	Z	0	Cytoskeleton	Cellular Signaling	
+Acc	W	0	Extracellular structures	Cellular Signaling	
+Acc	U	12	"Intracellular trafficking, secretion, and vesicular transport"	Metabolism	144
+Acc	O	14	"Posttranslational modification, protein turnover, chaperones"	Cellular Signaling	
+Acc	X	49	"Mobilome: prophages, transposons"	Metabolism	
+Acc	C	7	Energy production and conversion	Metabolism	
+Acc	G	38	Carbohydrate transport and metabolism	Metabolism	
+Acc	E	8	Amino acid transport and metabolism	Metabolism	
+Acc	F	7	Nucleotide transport and metabolism	Metabolism	
+Acc	H	7	Coenzyme transport and metabolism	Metabolism	
+Acc	I	5	Lipid transport and metabolism	Metabolism	
+Acc	P	8	Inorganic ion transport and metabolism	Metabolism	
+Acc	Q	3	"Secondary metabolites biosynthesis, transport and catabolism"	Metabolism	
+Acc	R	20	General function prediction only	No Prediction	400
+Acc	S	17	Function unknown	No Prediction	
+Acc	NA	363	No COG functional category found	No Prediction	
+Cloud	J	9	"Translation, ribosomal structure and biogenesis"	"DNA/RNA Storage, Translation, and Transcription"	438
+Cloud	A	0	RNA processing and modification	"DNA/RNA Storage, Translation, and Transcription"	
+Cloud	K	190	Transcription	"DNA/RNA Storage, Translation, and Transcription"	
+Cloud	L	239	"Replication, recombination and repair"	"DNA/RNA Storage, Translation, and Transcription"	
+Cloud	B	0	Chromatin structure and dynamics	"DNA/RNA Storage, Translation, and Transcription"	
+Cloud	D	43	"Cell cycle control, cell division, chromosome partitioning"	Cellular Signaling	349
+Cloud	Y	0	Nuclear structure	"DNA/RNA Storage, Translation, and Transcription"	
+Cloud	V	133	Defense mechanisms	Cellular Signaling	
+Cloud	T	31	Signal transduction mechanisms	Cellular Signaling	
+Cloud	M	99	Cell wall/membrane/envelope biogenesis	Cellular Signaling	
+Cloud	N	0	Cell motility	Cellular Signaling	
+Cloud	Z	0	Cytoskeleton	Cellular Signaling	
+Cloud	W	0	Extracellular structures	Cellular Signaling	
+Cloud	U	57	"Intracellular trafficking, secretion, and vesicular transport"	Metabolism	528
+Cloud	O	43	"Posttranslational modification, protein turnover, chaperones"	Cellular Signaling	
+Cloud	X	375	"Mobilome: prophages, transposons"	Metabolism	
+Cloud	C	3	Energy production and conversion	Metabolism	
+Cloud	G	39	Carbohydrate transport and metabolism	Metabolism	
+Cloud	E	5	Amino acid transport and metabolism	Metabolism	
+Cloud	F	7	Nucleotide transport and metabolism	Metabolism	
+Cloud	H	19	Coenzyme transport and metabolism	Metabolism	
+Cloud	I	5	Lipid transport and metabolism	Metabolism	
+Cloud	P	16	Inorganic ion transport and metabolism	Metabolism	
+Cloud	Q	2	"Secondary metabolites biosynthesis, transport and catabolism"	Metabolism	
+Cloud	R	49	General function prediction only	No Prediction	1642
+Cloud	S	32	Function unknown	No Prediction	
+Cloud	NA	1561	No COG functional category found	No Prediction	
+Core	J	191	"Translation, ribosomal structure and biogenesis"	"DNA/RNA Storage, Translation, and Transcription"	354
+Core	A	0	RNA processing and modification	"DNA/RNA Storage, Translation, and Transcription"	
+Core	K	90	Transcription	"DNA/RNA Storage, Translation, and Transcription"	
+Core	L	73	"Replication, recombination and repair"	"DNA/RNA Storage, Translation, and Transcription"	
+Core	B	0	Chromatin structure and dynamics	"DNA/RNA Storage, Translation, and Transcription"	
+Core	D	26	"Cell cycle control, cell division, chromosome partitioning"	Cellular Signaling	271
+Core	Y	0	Nuclear structure	"DNA/RNA Storage, Translation, and Transcription"	
+Core	V	30	Defense mechanisms	Cellular Signaling	
+Core	T	59	Signal transduction mechanisms	Cellular Signaling	
+Core	M	95	Cell wall/membrane/envelope biogenesis	Cellular Signaling	
+Core	N	4	Cell motility	Cellular Signaling	
+Core	Z	0	Cytoskeleton	Cellular Signaling	
+Core	W	0	Extracellular structures	Cellular Signaling	
+Core	U	11	"Intracellular trafficking, secretion, and vesicular transport"	Metabolism	642
+Core	O	57	"Posttranslational modification, protein turnover, chaperones"	Cellular Signaling	
+Core	X	2	"Mobilome: prophages, transposons"	Metabolism	
+Core	C	53	Energy production and conversion	Metabolism	
+Core	G	131	Carbohydrate transport and metabolism	Metabolism	
+Core	E	139	Amino acid transport and metabolism	Metabolism	
+Core	F	80	Nucleotide transport and metabolism	Metabolism	
+Core	H	76	Coenzyme transport and metabolism	Metabolism	
+Core	I	61	Lipid transport and metabolism	Metabolism	
+Core	P	74	Inorganic ion transport and metabolism	Metabolism	
+Core	Q	15	"Secondary metabolites biosynthesis, transport and catabolism"	Metabolism	
+Core	R	74	General function prediction only	No Prediction	289
+Core	S	72	Function unknown	No Prediction	
+Core	NA	143	No COG functional category found	No Prediction	
