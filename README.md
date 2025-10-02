@@ -14,6 +14,6 @@ In chapter 3, we will present the code to run genus level super-pangenomes, esse
 <img width="1925" height="1199" alt="Chapter 3 Workflow" src="https://github.com/user-attachments/assets/5a254525-93c5-4de2-9ba1-925f1bb66040" />
 
 
-In chapter 4, we will present the code to run comparisons between core and essential genes, as well as the analysis pipelinme for that data.
+In chapter 4, we will present the code to run comparisons between core and essential genes, as well as the analysis pipeline for that data.
 <img width="2452" height="836" alt="Chapter 4 Workflow" src="https://github.com/user-attachments/assets/cc6b7030-2c54-4b45-a502-6d8c673bd374" />
 
